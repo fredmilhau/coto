@@ -1,19 +1,15 @@
 {
-  "name": "coto",
-  "version": "0.0.2",
+  "name": "@fredmilhau/coto",
+  "version": "0.0.1",
   "description": "Lightweight web framework",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\" \"__tests__/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "build": "tsc",
-    "prepare": "echo prepare",
-    "prepublishOnly": "echo prepublishOnly",
-    "preversion": "echo preversion",
-    "version": "echo version",
-    "postversion": "echo postversion"
+    "flint": "npm run format && npm run lint"
   },
   "author": "fredmilhau",
   "license": "Apache-2.0",
@@ -22,7 +18,7 @@
     "url": "git@github.com:fredmilhau/coto.git"
   },
   "keywords": [
-    "choto",
+    "coto",
     "framework",
     "web",
     "rest",
